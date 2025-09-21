@@ -38,6 +38,8 @@ Notes:
 
 ## Data: titanic.csv
 
+[titanic.csv](https://github.com/KHenn22/datafun-06-eda/blob/main/titanic.csv)
+
 Description:
 
 - `titanic.csv` is a passenger-level dataset used for introductory data analysis and classification. Each row represents one passenger on the RMS Titanic; the usual target column is `Survived` (0 = died, 1 = survived).
@@ -63,7 +65,7 @@ Columns (exact, from `/titanic.csv`):
 | alive | Textual survival ('yes'/'no') |
 | alone | Boolean indicating whether passenger was alone |
 
-Clickable link (relative to repository root)
+ 
 
 ## Data verification: titanic.csv (actual file)
 
