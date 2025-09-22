@@ -3,7 +3,7 @@ Northwest Data Analytics Fundamentals Week 6
 
 ## Setup (clone, venv, install, verify)
 
-Follow these commands on macOS (bash) to reproduce what I did: cloning the repo, creating a Python virtual environment, installing dependencies from `requirements.txt`, and verifying the installation.
+Follow these commands on macOS (bash) to reproduce what: cloning the repo, creating a Python virtual environment, installing dependencies from `requirements.txt`, and verifying the installation.
 
 ```bash
 # 1) Clone the repository (choose SSH or HTTPS)
