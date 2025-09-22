@@ -1,7 +1,7 @@
-# datafun-06-eda
+# datafun-06-eda (2025-09-21)
 Northwest Data Analytics Fundamentals Week 6
 
-## Setup (clone, venv, install, verify) (2025-09-21)
+## Setup (clone, venv, install, verify)
 
 Follow these commands on macOS (bash) to reproduce what I did: cloning the repo, creating a Python virtual environment, installing dependencies from `requirements.txt`, and verifying the installation.
 
@@ -92,4 +92,37 @@ First 10 data rows (as CSV):
 
 Notes:
 - These columns include both the classic Kaggle columns and a few derived/extra columns like `class`, `who`, `adult_male`, `deck`, `embark_town`, `alive`, and `alone` which appear when using seaborn's `titanic` dataset or an augmented version.
+
+
+## Notebook: hennelly_eda.ipynb
+
+I added a Jupyter notebook, `hennelly_eda.ipynb`, which contains the full exploratory data analysis described above (numbered sections, visualizations in 6.1–6.7, and a concise Key Findings summary). The notebook was run locally during editing and includes the plotted outputs.
+
+Open this notebook in Jupyter Lab or Jupyter Notebook. From the project root on macOS (bash) the typical steps are:
+
+```bash
+# activate the virtualenv (assumes name `.venv` as above)
+source .venv/bin/activate
+
+# ensure dependencies are installed
+pip install -r requirements.txt
+
+# (optional) create an ipykernel for this venv so the notebook can pick the correct kernel
+python -m ipykernel install --user --name datafun-06-eda --display-name "Python (.venv datafun-06-eda)"
+
+# start Jupyter Lab (recommended) or Notebook
+jupyter lab
+# or
+jupyter notebook
+```
+
+Then open `hennelly_eda.ipynb` from the Jupyter interface. The notebook includes small, safe setup cells that normalize column names and create helper columns (so it should run on the provided `titanic.csv` without KeyError).
+
+Quick verification (inside the active venv):
+
+```bash
+python -c "import pandas as pd, seaborn as sns, matplotlib; print('pandas', pd.__version__, 'seaborn', sns.__version__)"
+```
+
+Notebook (GitHub link): https://github.com/KHenn22/datafun-06-eda/blob/main/hennelly_eda.ipynb
 
